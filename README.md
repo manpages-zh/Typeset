@@ -13,7 +13,13 @@ groff 格式是手册页的基本格式，它是由一些标记对文本进行�
 
 `docbook/` 是排版 docbook 格式所需的文件夹，`html_zh` 是从翻译流程中得到的中文 HTML 文件，ronn 是对 HTML 排版得到的 ronn 文件，man 是 ronn 生成的 groff 手册文件。 
 
-本 REPO 还包括一些第三方模块，已满足不同人员使用不同排版工具的需求。
+本 REPO 还包括一些第三方模块，已满足不同人员使用不同排版工具的需求。如下：
+
+```csv
+├── man2ronn        		Convert man pages to ronn-format files
+├── roff-processzh		process Chinese man roff document for better display 
+└── rtomayko/ronn          		the opposite to roff
+```
 
 本 REPO 得到的中文手册最终会来到 <https://github.com/manpages-zh/manpages_zh> 发布。
 
