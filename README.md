@@ -11,14 +11,18 @@ groff 格式是手册页的基本格式，它是由一些标记对文本进行�
 
 ## 项目结构
 
-`docbook/` 是使用排版 docbook 格式所需的文件夹，ronn
+`docbook/` 是排版 docbook 格式所需的文件夹，`html_zh` 是从翻译流程中得到的中文 HTML 文件，ronn 是对 HTML 排版得到的 ronn 文件，man 是 ronn 生成的 groff 手册文件。 
+
+本 REPO 还包括一些第三方模块，已满足不同人员使用不同排版工具的需求。
+
+本 REPO 得到的中文手册最终会来到 <https://github.com/manpages-zh/manpages_zh> 发布。
 
 # 排版
 ----------------------
 
 ## 使用 ronn 进行排版
 
-ronn 程序大概已经在您系统的包管理器里面了，所以直接安装即可，如果没有，您可以在这里找到它的源文件：<https://github.com/rtomayko/ronn> 编译安装即可。
+ronn 程序大概已经在您系统的包管理器里面了，所以直接安装即可，如果没有，这里提供了一个子模块 `rtomayko/`，里面是从 Github 获取的 ronn 的源代码。您也可以在这里找到它的源文件：<https://github.com/rtomayko/ronn> 编译安装即可。
 
 ronn 简单易学，可以生成手册和 HTML 两种格式文档。它包括 ronn 程序本身和 ronn-format 标记语法。该语法类似于 markdown。ronn 命令可以将符合 ronn-format 标记的 `*.ronn` 文件转化成man手册页，ronn-format 包含markdown格式的所有特性，同时也引入了一些其他在man手册中使用的约定和标记。ronn 简单轻便，如果您熟悉 Markdown,那么您可以很快上手，并排版生成 Groff 手册文件，因此是目前我们推荐的方式。
 
@@ -43,4 +47,4 @@ ronn-format 的语法请参考 `./ronn-format.html`。ronn 命令使用方法如
 
 ## 使用 Docbook 排版
 
-
+请参考 docbook 文件夹。

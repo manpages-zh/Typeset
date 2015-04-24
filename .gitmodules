@@ -1,0 +1,6 @@
+[submodule "rtomayko/ronn"]
+	path = rtomayko/ronn
+	url = https://github.com/rtomayko/ronn.git
+[submodule "roff-processzh"]
+	path = roff-processzh
+	url = https://github.com/man-pages-zh/roff-processzh.git
