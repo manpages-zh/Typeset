@@ -4,3 +4,6 @@
 [submodule "roff-processzh"]
 	path = roff-processzh
 	url = https://github.com/man-pages-zh/roff-processzh.git
+[submodule "man2ronn"]
+	path = man2ronn
+	url = https://github.com/man-pages-zh/man2ronn.git
